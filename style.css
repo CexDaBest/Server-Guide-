@@ -1,0 +1,74 @@
+summary {
+    display: block;
+    background-color: #112240;
+    margin: 5px;
+}
+
+div {
+    background-color: #0A192F;
+    width: 98%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+details {
+    margin-bottom: 15px;
+    background-color: #112240; /* Azul un poco más claro */
+    padding: 10px;
+    border-radius: 4px;
+    color: #CCD6F6;
+}
+
+/* El título (summary) */
+summary {
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #64FFDA; /* Un toque cian para resaltar el comando */
+    outline: none;
+}
+
+/* El texto dentro del <p> (Sangría y tamaño) */
+.command-text {
+    margin-left: 25px;   /* Aquí es donde se hace "hacia adelante" */
+    margin-top: 10px;    /* Espacio respecto al título */
+    font-size: 0.9rem;   /* Más pequeño para jerarquía */
+    letter-spacing: 0.5px;
+    line-height: 1.4;    /* Mejor legibilidad */
+    color: #F8FAFC;
+}
+
+/* Estilo para los bloques de código <code> */
+code {
+    background-color: #1E293B;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #F1C40F; /* Dorado para comandos técnicos */
+}
+
+details {
+    margin-left: 10px;
+}
+
+summary, div, details {
+    letter-spacing: 1px;
+    font-size: 0.98em;
+}
+
+body {
+  font-family: 'Mojangles', Arial, sans-serif; /* Usa MiFuentePersonalizada si está disponible, si no, Arial o cualquier sans-serif */
+  background-color: darkblue;
+}
+
+h1 {
+  font-family: 'Mojangles', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+@font-face {
+  font-family: 'Mojangles'; /* El nombre que usarás */
+  src: url('Minercraftory.ttf') format('truetype'); /* Formato moderno */
+  font-weight: normal;
+  font-style: normal;
+}

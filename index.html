@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro de ayuda del servidor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1> <big> Comandos útiles </big> </h1>
+
+        <!-- Mapa de minijuegos: comandos ampliados -->
+    <div class="minigame-commands">
+    <details>
+        <summary><strong>/scoreboard</strong></summary>
+        <p class="command-text">Usa este comando para **crear objetivos** (vidas, puntos, rondas), **modificar valores** y **mostrar** tablas en pantalla. 
+        Contiene subcomandos como: <code>objectives add</code> (crear objetivo), <code>players add/set/test</code> (gestionar valores por jugador) y <code>objectives setdisplay</code> (mostrar en sidebar, list, belowName). 
+        Útil para triggers condicionales con `/execute` y para almacenar resultados entre rondas.</p>
+    </details>
+
+    <details>
+        <summary><strong>/function</strong></summary>
+        <p class="command-text">Ejecuta archivos `.mcfunction` que contienen listas de comandos. Ideal para **secuencias repetitivas**: iniciar ronda, dar kits, limpiar arena, teleports y mensajes. 
+        Organiza funciones por carpetas (p. ej. `minigames/start.mcfunction`) y llámalas desde command blocks o al iniciar el servidor.</p>
+    </details>
+
+    <details>
+        <summary><strong>/setblock</strong></summary>
+        <p class="command-text">Coloca o reemplaza un bloque en coordenadas exactas. Sirve para **activar trampas**, colocar botones/palancas o crear puntos de spawn temporales. 
+        Soporta estados de bloque y datos NBT en algunos casos.</p>
+    </details>
+
+    <details>
+        <summary><strong>/fill</strong></summary>
+        <p class="command-text">Rellena un volumen con un bloque o lo limpia (air). Perfecto para **restaurar arenas** entre partidas o crear muros y plataformas rápidamente. 
+        Opciones: `replace`, `destroy`, `keep` para controlar comportamiento sobre bloques existentes.</p>
+    </details>
+
+    <details>
+        <summary><strong>/clone</strong></summary>
+        <p class="command-text">Copia una región y la pega en otra ubicación. Úsalo para replicar niveles, obstáculos o spawn points idénticos sin reconstruirlos.</p>
+    </details>
+
+    <details>
+        <summary><strong>/teleport ( /tp )</strong></summary>
+        <p class="command-text">Teletransporta jugadores/entidades a coordenadas o a otros jugadores. Soporta orientación (yaw/pitch) para que los jugadores miren hacia un objetivo al aparecer. 
+        Muy útil para puntos de inicio, zonas seguras o teleports de emergencia.</p>
+    </details>
+
+    <details>
+        <summary><strong>/give</strong></summary>
+        <p class="command-text">Entrega ítems o kits con NBT opcional (encantamientos, nombres, atributos). Úsalo para dar armas, herramientas o ítems especiales al comenzar cada ronda.</p>
+    </details>
+
+    <details>
+        <summary><strong>/gamemode</strong></summary>
+        <p class="command-text">Cambia el modo de juego (survival, creative, adventure, spectator). Útil para fases: preparación (creative), juego (survival/adventure), observador (spectator).</p>
+    </details>
+
+    <details>
+        <summary><strong>/effect</strong></summary>
+        <p class="command-text">Aplica efectos de poción (duración, nivel). Úsalo para power-ups (velocidad, fuerza) o penalizaciones (slowness, blindness).</p>
+    </details>
+
+    <details>
+        <summary><strong>/title</strong></summary>
+        <p class="command-text">Muestra títulos y subtítulos grandes en pantalla; perfecto para anunciar inicio/fin de rondas, ganador o instrucciones rápidas.</p>
+    </details>
+
+    <details>
+        <summary><strong>/playsound</strong></summary>
+        <p class="command-text">Reproduce sonidos a jugadores concretos. Categorías: ambient, block, entity, music, weather, ui, player. 
+        **Sonidos comunes:** <code>minecraft:entity.player.levelup</code>, <code>minecraft:entity.experience_orb.pickup</code>, <code>minecraft:block.note_block.pling</code>, <code>minecraft:entity.ender_dragon.growl</code>, <code>minecraft:music.game</code>, <code>minecraft:ambient.cave</code>. 
+        Usa volumen y pitch para variar la señalización.</p>
+    </details>
+
+    <details>
+        <summary><strong>/summon</strong></summary>
+        <p class="command-text">Genera mobs u objetos con NBT; útil para jefes, objetivos o NPCs que den misiones.</p>
+    </details>
+
+    <details>
+        <summary><strong>/execute</strong></summary>
+        <p class="command-text">Comando avanzado para condicionales y lógica: ejecutar acciones **solo si** se cumple una condición (p. ej. puntuación en scoreboard, presencia en área). Es la base para reglas complejas de minijuegos.</p>
+    </details>
+
+    <details>
+        <summary><strong>Consejos rápidos</strong></summary>
+        <p class="command-text">Prueba todo en un mundo de pruebas; organiza tus `.mcfunction`; usa <code>/gamerule doDaylightCycle false</code> para controlar el tiempo.</p>
+    </details>
+    </div>
+
+</body>
+
+</html>
